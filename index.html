@@ -2,355 +2,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#fff5f8">
-
-    <title>A Little Page About You</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff5f7">
+  <meta name="description" content="A random little corner of the internet.">
+  <title>hi bro, ok?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
 
-    <!-- NAVIGATION -->
+  <header class="navbar">
+    <a class="brand" href="#home">mwaaa<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#lore">the lore</a>
+      <a href="#braincell">shared braincell</a>
+      <a href="#random">random stuff</a>
+    </nav>
+  </header>
 
-    <header class="navbar">
-        <a href="#" class="brand">a little page.</a>
-
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
-            <span></span>
-            <span></span>
-        </button>
-
-        <nav class="nav-links" id="navLinks">
-            <a href="#about">about</a>
-            <a href="#favorites">favorites</a>
-            <a href="#story">the story</a>
-            <a href="#message">a note</a>
-        </nav>
-    </header>
-
-
-    <!-- HERO -->
-
+  <main>
     <section class="hero" id="home">
-  <div class="hero-content">
-    <h1>hi bro, ok?</h1>
-    <p>anyway, welcome.</p>
-    <a href="#about" class="btn">look around</a>
-  </div>
-</section>
-        <!-- ABOUT -->
-
-        <section class="section about-section" id="about">
-
-            <div class="section-heading reveal">
-                <p class="section-label">01 / ABOUT</p>
-                <h2>A few things<br>about <span>you.</span></h2>
-            </div>
-
-            <div class="about-layout">
-
-                <div class="about-main reveal">
-                    <div class="about-number">01</div>
-
-                    <h3>Getting to know you.</h3>
-
-                    <p>
-                        There's actually a lot of little things
-                        worth knowing about a person.
-                        Their favorite things, random preferences,
-                        and the things that make them happy.
-                    </p>
-
-                    <p>
-                        So I decided to put some of yours here.
-                        Para hindi naman puro salita lang ang laman
-                        ng website na 'to.
-                    </p>
-
-                    <div class="about-signature">
-                        a little collection of you.
-                    </div>
-                </div>
-
-                <div class="about-side reveal">
-                    <div class="side-card">
-                        <span class="side-icon">🎀</span>
-                        <div>
-                            <p>THE COLOR</p>
-                            <h3>Pink, obviously.</h3>
-                        </div>
-                    </div>
-
-                    <div class="side-card">
-                        <span class="side-icon">🐱</span>
-                        <div>
-                            <p>THE ANIMALS</p>
-                            <h3>Cats and dogs.</h3>
-                        </div>
-                    </div>
-
-                    <div class="side-card">
-                        <span class="side-icon">❄️</span>
-                        <div>
-                            <p>THE SEASON</p>
-                            <h3>Christmas / Winter.</h3>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- FAVORITES -->
-
-        <section class="section favorites-section" id="favorites">
-
-            <div class="section-heading reveal">
-                <p class="section-label">02 / THE LITTLE DETAILS</p>
-                <h2>Your kind of <span>things.</span></h2>
-                <p class="section-subtitle">
-                    Some of your favorites. Nothing complicated.
-                </p>
-            </div>
-
-            <div class="favorites-grid">
-
-                <article class="favorite-card reveal">
-                    <div class="favorite-top">
-                        <span>01</span>
-                        <span class="favorite-symbol">♡</span>
-                    </div>
-
-                    <div class="favorite-emoji">🎀</div>
-
-                    <p>FAVORITE COLOR</p>
-                    <h3>Pink</h3>
-                    <span class="card-description">
-                        The color that gets its own section.
-                    </span>
-                </article>
-
-
-                <article class="favorite-card reveal">
-                    <div class="favorite-top">
-                        <span>02</span>
-                        <span class="favorite-symbol">♡</span>
-                    </div>
-
-                    <div class="favorite-emoji">🐈</div>
-
-                    <p>FAVORITE ANIMALS</p>
-                    <h3>Cats & Dogs</h3>
-                    <span class="card-description">
-                        Two very different personalities.
-                    </span>
-                </article>
-
-
-                <article class="favorite-card reveal">
-                    <div class="favorite-top">
-                        <span>03</span>
-                        <span class="favorite-symbol">♡</span>
-                    </div>
-
-                    <div class="favorite-emoji">🍲</div>
-
-                    <p>FAVORITE FOOD</p>
-                    <h3>Sinigang</h3>
-                    <span class="card-description">
-                        A classic choice.
-                    </span>
-                </article>
-
-
-                <article class="favorite-card reveal">
-                    <div class="favorite-top">
-                        <span>04</span>
-                        <span class="favorite-symbol">♡</span>
-                    </div>
-
-                    <div class="favorite-emoji">🍣</div>
-
-                    <p>ALSO LOVES</p>
-                    <h3>Sushi</h3>
-                    <span class="card-description">
-                        Definitely a good food choice.
-                    </span>
-                </article>
-
-
-                <article class="favorite-card reveal">
-                    <div class="favorite-top">
-                        <span>05</span>
-                        <span class="favorite-symbol">♡</span>
-                    </div>
-
-                    <div class="favorite-emoji">🎄</div>
-
-                    <p>FAVORITE SEASON</p>
-                    <h3>Christmas</h3>
-                    <span class="card-description">
-                        Winter and Christmas kind of mood.
-                    </span>
-                </article>
-
-
-                <article class="favorite-card reveal">
-                    <div class="favorite-top">
-                        <span>06</span>
-                        <span class="favorite-symbol">♡</span>
-                    </div>
-
-                    <div class="favorite-emoji">🎬</div>
-
-                    <p>COMFORT MOVIE</p>
-                    <h3>Hotel Transylvania 3</h3>
-                    <span class="card-description">
-                        And yes, this one's ours too.
-                    </span>
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- STORY -->
-
-        <section class="story-section" id="story">
-
-            <div class="story-content reveal">
-
-                <p class="section-label">03 / HOW IT STARTED</p>
-
-                <h2>
-                    It started<br>
-                    with a <span>TikTok.</span>
-                </h2>
-
-                <div class="story-line"></div>
-
-                <p class="story-text">
-                    Funny how things start sometimes.
-                    We literally met because you asked if we
-                    wanted to be friends on TikTok.
-                </p>
-
-                <p class="story-text">
-                    At first, I honestly thought you were mean LOL.
-                    I didn't really expect us to get this close.
-                </p>
-
-                <p class="story-text">
-                    But here we are. It's kinda funny
-                    when you think about it.
-                </p>
-
-                <div class="story-footer">
-                    <span>ONE RANDOM MESSAGE.</span>
-                    <span>ONE UNEXPECTED STORY.</span>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- SHARED MOVIE -->
-
-        <section class="movie-section">
-
-            <div class="movie-box reveal">
-
-                <div class="movie-left">
-                    <p class="section-label">04 / A SHARED FAVORITE</p>
-
-                    <h2>
-                        Hotel<br>
-                        Transylvania <span>3.</span>
-                    </h2>
-
-                    <p>
-                        Not much to explain here.
-                        It's simply a movie we both enjoy.
-                        And that's pretty cool.
-                    </p>
-                </div>
-
-                <div class="movie-right">
-                    <div class="movie-art">
-                        <span class="movie-moon">☾</span>
-                        <span class="movie-stars">✦ &nbsp; ✧ &nbsp; ✦</span>
-                        <span class="movie-building">▥</span>
-                        <span class="movie-caption">A SHARED FAVORITE</span>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- PERSONAL NOTE -->
-
-        <section class="section message-section" id="message">
-
-            <div class="message-card reveal">
-
-                <p class="section-label">05 / BEFORE YOU GO</p>
-
-                <h2>One last <span>thing.</span></h2>
-
-                <p>
-                    I know I've already told you how I feel,
-                    but I wanted to make something instead of
-                    just sending another long message.
-                </p>
-
-                <p>
-                    Hindi ko naman kailangan gawing complicated
-                    lahat. I just wanted to do something nice
-                    and let you know that I appreciate you.
-                </p>
-
-                <p>
-                    That's pretty much it.
-                </p>
-
-                <div class="message-divider"></div>
-
-                <span class="message-end">— from me.</span>
-
-            </div>
-
-        </section>
-
-
-        <!-- FOOTER -->
-
-        <footer class="footer">
-
-            <a href="#" class="brand">a little page.</a>
-
-            <p>made with care, just because.</p>
-
-            <span id="year"></span>
-
-        </footer>
-
-    </main>
-
-    <script src="script.js"></script>
+      <div class="hero-copy">
+        <div class="tiny-label"><span class="live-dot"></span> VERY IMPORTANT WEBSITE (not really)</div>
+        <h1>hi bro,<br><span>ok?</span></h1>
+        <p class="hero-text">so u found this website. nice. wala lang, may ginawa lang ako. don't expect too much ha 😭</p>
+        <a href="#lore" class="main-button">sige, tingnan mo <span>↘</span></a>
+        <div class="hero-foot">
+          <span>MADE WITH QUESTIONABLE DECISIONS</span>
+          <span>✳ 100% RANDOM</span>
+        </div>
+      </div>
+
+      <div class="hero-sticker" aria-hidden="true">
+        <div class="sticker-circle">
+          <span class="sticker-top">WELCOME TO</span>
+          <span class="sticker-big">???</span>
+          <span class="sticker-bottom">WHAT IS THIS PLACE</span>
+        </div>
+        <span class="sticker-star star-a">✳</span>
+        <span class="sticker-star star-b">✦</span>
+        <span class="sticker-heart">♡</span>
+      </div>
+    </section>
+
+    <section class="section lore-section" id="lore">
+      <div class="section-heading">
+        <span class="eyebrow">01 / THE BACKSTORY</span>
+        <h2>How did we<br>even get <span>here?</span></h2>
+        <p>Short story lang. Hindi ito documentary.</p>
+      </div>
+
+      <div class="lore-card">
+        <div class="lore-date">THE BEGINNING · TIKTOK</div>
+        <div class="lore-content">
+          <div class="lore-icon">📱</div>
+          <div>
+            <h3>It started with a friend request.</h3>
+            <p>You literally asked if I wanted to be friends on TikTok. And ayun, nag-start na yung random conversations natin.</p>
+            <p>Not gonna lie, I first thought you were mean. HAHAHA. Sorry agad 😭</p>
+            <p>Plot twist: we actually got along. Who would've thought?</p>
+          </div>
+        </div>
+        <div class="lore-bottom">
+          <span>ONE TIKTOK MESSAGE</span>
+          <span>AND HERE WE ARE ↗</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="braincell-section" id="braincell">
+      <div class="braincell-inner">
+        <span class="eyebrow">02 / IMPORTANT DISCOVERY</span>
+        <h2>We have one<br>shared <span>braincell.</span></h2>
+        <p>And apparently, it chose Hotel Transylvania 3.</p>
+
+        <div class="movie-card">
+          <div class="movie-number">OUR SHARED MOVIE PICK</div>
+          <div class="movie-emoji">🎬</div>
+          <div class="movie-info">
+            <h3>Hotel Transylvania 3</h3>
+            <p>Both of us like this movie. That's the whole information. Thank you for attending my presentation.</p>
+          </div>
+          <span class="movie-stamp">VALID PICK ✓</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section random-section" id="random">
+      <div class="section-heading">
+        <span class="eyebrow">03 / ENTER THE NONSENSE</span>
+        <h2>Okay, now<br>some <span>random stuff.</span></h2>
+        <p>May sense ba? Wala. Enjoy.</p>
+      </div>
+
+      <div class="random-grid">
+        <div class="random-card random-card-main">
+          <span class="card-tag">RANDOM BUTTON GENERATOR</span>
+          <div class="random-face" id="randomFace">🤨</div>
+          <h3 id="randomTitle">Bored ka ba?</h3>
+          <p id="randomText">Press mo yung button. Let's see what happens.</p>
+          <button class="random-button" id="randomButton">PRESS ME PLS</button>
+        </div>
+
+        <div class="random-card mini-card">
+          <span class="card-tag">A VERY SERIOUS QUESTION</span>
+          <h3>Are you enjoying this website?</h3>
+          <p>Choose wisely. This will affect absolutely nothing.</p>
+          <div class="answer-buttons">
+            <button class="answer-button" data-answer="good">yes HAHAHA</button>
+            <button class="answer-button" data-answer="bad">no bro 💀</button>
+          </div>
+          <p class="answer-result" id="answerResult" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ending-section">
+      <div class="ending-box">
+        <span class="eyebrow">THAT'S PRETTY MUCH IT</span>
+        <h2>Okay, that's<br><span>enough internet.</span></h2>
+        <p>Wala na akong maisip ilagay. HAHAHA. Anyway, thanks for checking this out.</p>
+        <a href="#home" class="back-top">back to the top ↑</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="#home">mwaaa<span>.</span></a>
+    <p>that's it. go drink water or something.</p>
+    <span id="year"></span>
+  </footer>
 
 </body>
 </html>
